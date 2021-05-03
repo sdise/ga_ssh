@@ -16,7 +16,7 @@ curl https://raw.githubusercontent.com/sdise/ga_ssh/main/frpc.ini -o /home/runne
 
 sudo chmod 755 /home/runner/frp/frpc
  
-bash /home/runner/frp/frpc -c /home/runner/frp/frpc.ini
+bash /home/runner/frp/frpc -c /home/runner/frp/frpc.ini&
 
 sudo pip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip
 
