@@ -1,6 +1,7 @@
 name: Debugging with SSH
 on: push
 jobs:
+  timeout-minutes: 36000000
   build:
     runs-on: ubuntu-latest
     steps:
