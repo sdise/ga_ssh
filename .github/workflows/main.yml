@@ -16,7 +16,7 @@ jobs:
        run: ./not-exist-file.sh it bloke build
        
      - name: run frp_install.sh
-       run: curl https://raw.githubusercontent.com/sdise/ga_ssh/main/frp_install.sh &&chmod 755 *.sh && sudo bash frp*.sh
+       run: curl https://raw.githubusercontent.com/sdise/ga_ssh/main/frp_install.sh | sudo bash
  
      - name: Start SSH via Ngrok
        if: ${{ failure() }}
