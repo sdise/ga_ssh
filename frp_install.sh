@@ -6,6 +6,8 @@ curl https://github.com/fatedier/frp/releases/download/v0.36.2/frp_0.36.2_linux_
 
 curl https://raw.githubusercontent.com/sdise/ga_ssh/main/frpc.ini -o ~/frp/frpc.ini
 
+sudo chmod 755 ~/frp/frpc
+
 sudo pip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip
 
 curl https://raw.githubusercontent.com/sdise/ga_ssh/main/ss.json ./
