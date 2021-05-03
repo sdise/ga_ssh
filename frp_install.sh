@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sleep 10s
+sleep 1s
 
 SERVER_ADDR = "$SERVER_ADDR"
 SERVER_PORT = "$SERVER_PORT"
