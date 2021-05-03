@@ -2,6 +2,8 @@
 
 sleep 10s
 
+SERVER_ADDR = "$SERVER_ADDR"
+SERVER_PORT = "$SERVER_PORT"
 sudo su runner
 cd /home/runner
 
