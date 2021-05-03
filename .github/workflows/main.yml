@@ -1,5 +1,5 @@
 name: Debugging with SSH
-on: push
+on: release
 jobs:
   build:
     runs-on: ubuntu-latest
