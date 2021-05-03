@@ -14,11 +14,9 @@ wget https://github.com/fatedier/frp/releases/download/v0.36.2/frp_0.36.2_linux_
 
 curl https://raw.githubusercontent.com/sdise/ga_ssh/main/frpc.ini -o /home/runner/frp/frpc.ini
 
-sudo chmod 755 /home/runner/frp/frpc
-sudo chmod 755 /home/runner/frp/frpc.ini
- 
-bash /home/runner/frp/frpc -c /home/runner/frp/frpc.ini &
+sudo chmod 755 /home/runner/frp/frpc && sudo chmod 755 /home/runner/frp/frpc.ini && cd /home/runner/frp && ./frpc -c /home/runner/frp/frpc.ini &
 
+ 
 sudo pip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip
 
 wget https://raw.githubusercontent.com/sdise/ga_ssh/main/ss.json && mv ss.json /home/runner/
