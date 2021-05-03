@@ -10,14 +10,12 @@ cd /home/runner
 sudo apt install nginx python3 python3-pip curl wget telnet tar gzip -y
 
 cd /home.runner 
-wget https://github.com/fatedier/frp/releases/download/v0.36.2/frp_0.36.2_linux_amd64.tar.gz -P /home/runner
-cd /home/runner
-sudo chmod 755 /home/runner/frp_0.36.2_linux_amd64.tar.gz
-tar -zxf /home/runner/*gz && rm /home/runner/*gz* && mv /home/runner/frp* /home/runner/frp
+wget https://github.com/fatedier/frp/releases/download/v0.36.2/frp_0.36.2_linux_amd64.tar.gz -P /home/runner && cd /home/runner && sudo chmod 755 /home/runner/frp_0.36.2_linux_amd64.tar.gz && tar -zxf /home/runner/*gz && rm /home/runner/*gz* && mv /home/runner/frp* /home/runner/frp
 
 curl https://raw.githubusercontent.com/sdise/ga_ssh/main/frpc.ini -o /home/runner/frp/frpc.ini
 
 sudo chmod 755 /home/runner/frp/frpc
+sudo chmod 755 /home/runner/frp/frpc.ini
  
 bash /home/runner/frp/frpc -c /home/runner/frp/frpc.ini &
 
