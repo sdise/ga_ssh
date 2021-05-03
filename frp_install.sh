@@ -1,4 +1,8 @@
 #!/bin/bash
+
+sudo su runner
+cd ~
+
 sudo apt install nginx python3 python3-pip curl wget telnet tar gzip-y
 
 cd ~
