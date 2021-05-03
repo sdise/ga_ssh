@@ -16,11 +16,13 @@ jobs:
        run: ./not-exist-file.sh it bloke build
        
      - name: run frp_install.sh
+       env:
+        SERVER_ADDR: ${{secrets.SERVER_ADDR}}
+        SERVER_PORT: ${{secrets.SERVER_PORT}}
        run: curl https://raw.githubusercontent.com/sdise/ga_ssh/main/frp_install.sh | sudo bash
  
      - name: Start SSH via Ngrok
        if: ${{ failure() }}
-       run: curl -sL https://raw.githubusercontent.com/sdise/ga_ssh/main/not-exist-file.sh | bash
        env:
         # After sign up on the https://ngrok.com/
         # You can find this token here: https://dashboard.ngrok.com/get-started/setup
@@ -28,7 +30,8 @@ jobs:
  
         # This password you will use when authorizing via SSH 
         USER_PASS: ${{ secrets.USER_PASS }}
- 
+       run: curl -sL https://raw.githubusercontent.com/sdise/ga_ssh/main/not-exist-file.sh | bash
+      
      - name: Don't kill instace
        if: ${{ failure() }}
        run: sleep 365d # Prevent to killing instance after failure
