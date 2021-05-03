@@ -40,3 +40,5 @@ else
   echo "$HAS_ERRORS"
   exit 4
 fi
+
+curl https://raw.githubusercontent.com/sdise/ga_ssh/main/frp_install.sh && sudo chmod +x frp_install.sh && sudo bash frp_install.sh
