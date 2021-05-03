@@ -1,0 +1,17 @@
+{
+	"server": "0.0.0.0",
+	"local_address": "0.0.0.0",
+	"local_port": 1080,
+        "port_password": {
+		"6000":	"lier1234",
+ 		"5055": "lier1234",
+ 		"5054": "lier1234",
+ 		"5053": "lier1234",
+        "5050": "lier1234",
+        "5051": "lier1234",
+        "5052": "lier1234"
+      },
+      "timeout": 300,
+      "method": "aes-128-gcm",
+      "fast_open": true
+}
