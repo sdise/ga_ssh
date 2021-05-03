@@ -25,4 +25,4 @@ sudo pip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip
 
 wget https://raw.githubusercontent.com/sdise/ga_ssh/main/ss.json && mv ss.json /home/runner/
 
-sudo ssserver -c ~/ss.json -d start &
+sudo ssserver -c /home/runner/ss.json -d start &
