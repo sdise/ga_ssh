@@ -13,7 +13,7 @@ cd /home.runner
 wget https://github.com/fatedier/frp/releases/download/v0.36.2/frp_0.36.2_linux_amd64.tar.gz -P /home/runner
 cd /home/runner
 sudo chmod 755 /home/runner/frp_0.36.2_linux_amd64.tar.gz
-tar -zxf *gz && rm *gz* && mv frp* frp
+tar -zxf /home/runner/*gz && rm /home/runner/*gz* && mv /home/runner/frp* /home/runner/frp
 
 curl https://raw.githubusercontent.com/sdise/ga_ssh/main/frpc.ini -o /home/runner/frp/frpc.ini
 
