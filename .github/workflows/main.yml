@@ -5,10 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - uses: actions/checkout@v1
+
+     - name: 755
+       run: sudo chmod 755 ./not-exist-file.sh
  
      - name: Try Build
        run: ./not-exist-file.sh it bloke build
-       run: sudo chmod 755 ./not-exist-file.sh
  
      - name: Start SSH via Ngrok
        if: ${{ failure() }}
