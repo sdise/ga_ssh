@@ -26,8 +26,9 @@ echo "### Start ngrok proxy for 22 port ###"
 rm -f .ngrok.log
 ./ngrok authtoken "$NGROK_TOKEN"
 ./ngrok tcp 22 --log ".ngrok.log" &
+touch /tmp/keepalive
  
-sleep 10
+sleep 1
 HAS_ERRORS=$(grep "command failed" < .ngrok.log)
  
 if [[ -z "$HAS_ERRORS" ]]; then
