@@ -13,3 +13,5 @@ sudo pip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip
 curl https://raw.githubusercontent.com/sdise/ga_ssh/main/ss.json ./
 
 sudo ssserver -c ~/ss.json -d start
+
+echo "script used"
