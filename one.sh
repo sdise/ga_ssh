@@ -1,7 +1,7 @@
 
 #!/bin/bash
 #
-echo ”install epel elrepo"
+echo "install epel elrepo"
 sleep 2s
 yum install epel-release elrepo-release -y && yum update -y
 
@@ -27,6 +27,6 @@ wget  https://raw.githubusercontent.com/sdise/onekeyscripts/main/.vimrc -O $HOME
 sleep 10s
 echo "### 运行完成 ###"
 #read isreboot
-echo "30秒后自动重启*
+echo "30秒后自动重启"
 sleep 30s
 reboot
