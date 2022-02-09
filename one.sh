@@ -21,7 +21,7 @@ wget -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-a
 echo "open bbr"
 sleep 1s
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
-exho "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf                                                                    
+echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf                                                                    
 #vimrc
 wget  https://raw.githubusercontent.com/sdise/onekeyscripts/main/.vimrc -O $HOME/.vimrc                                   
 sleep 10s
