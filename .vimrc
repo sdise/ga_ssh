@@ -3,13 +3,13 @@ syntax on
 
 set encoding=utf-8
 
-set number
+"set number
 "显示是插入模式还是命令模式
 set showmode
 "显示键入命令
 set showcmd
 "支持鼠标
-set mouse=a
+"set mouse=a
 set selection=exclusive
 set selectmode=mouse,key
 "使用256色
