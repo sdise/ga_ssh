@@ -1,7 +1,7 @@
 name: Ubuntu
 on:
-  watch:
-    types: started
+  release:
+    types: [published]
 jobs:
   Ubuntu:
     runs-on: ubuntu-latest
