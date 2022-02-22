@@ -2,7 +2,7 @@
 #!/bin/bash
 #
 echo "install epel elrepo"
-sleep 2s
+sleep 1s
 yum install epel-release elrepo-release -y && yum update -y
 
 echo "install python pip nginx vim wget curl"
@@ -10,11 +10,11 @@ sleep 1s
 yum install python3 python3-pip git nginx vim wget curl screen -y
 
 echo "update sysytem kenerl forom elrepo-ml"
-sleep 3s
+sleep 1s
 yum --enablerepo=elrepo-kernel install kernel-ml -y &&grub2-set-default 0 &&grub2-mkconfig -o /boot/grub2/grub.cfg
 
 echo "download CFwarp.sh to wg.sh v2ry-agent.sh to xray.sh"
-sleep 2s
+sleep 1s
 wget -O wg.sh https://raw.githubusercontent.com/sdise/onekeyscrypts/main/warp.sh && bash warp.sh d
 wget -N --no-check-certificate "https://raw.githubusercontent.com/sdise/onekeyscrypts/main/xray.sh" -O xray.sh
 
@@ -27,6 +27,6 @@ wget  https://raw.githubusercontent.com/sdise/onekeyscripts/main/.vimrc -O $HOME
 sleep 10s
 echo "### 运行完成 ###"
 #read isreboot
-echo "30秒后自动重启"
-sleep 30s
+echo "3秒后自动重启"
+sleep 3s
 reboot
