@@ -1096,7 +1096,7 @@ nginxBlog() {
 handleNginx() {
 
 	if [[ -z $(pgrep -f "nginx") ]] && [[ "$1" == "start" ]]; then
-		systemctl start nginx
+	        nginx
 		sleep 0.5
 
 		if [[ -z $(pgrep -f nginx) ]]; then
@@ -1105,7 +1105,7 @@ handleNginx() {
 			exit 0
 		fi
 	elif [[ -n $(pgrep -f "nginx") ]] && [[ "$1" == "stop" ]]; then
-		systemctl stop nginx
+		nginx  -s stop
 		sleep 0.5
 		if [[ -n $(pgrep -f "nginx") ]]; then
 			pgrep -f "nginx" | xargs kill -9
