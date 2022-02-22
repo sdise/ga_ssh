@@ -15,7 +15,7 @@ yum --enablerepo=elrepo-kernel install kernel-ml -y &&grub2-set-default 0 &&grub
 
 echo "download CFwarp.sh to wg.sh v2ry-agent.sh to xray.sh"
 sleep 2s
-wget -O wg.sh https://raw.githubusercontent.com/sdise/onekeyscrypts/main/warp.sh && baah warp.sh d
+wget -O wg.sh https://raw.githubusercontent.com/sdise/onekeyscrypts/main/warp.sh && bash warp.sh d
 wget -N --no-check-certificate "https://raw.githubusercontent.com/sdise/onekeyscrypts/main/xray.sh" -O xray.sh
 
 echo "open bbr"
