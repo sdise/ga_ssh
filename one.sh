@@ -25,6 +25,7 @@ echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 #vimrc
 wget  https://raw.githubusercontent.com/sdise/onekeyscripts/main/.vimrc -O $HOME/.vimrc                                   
 sleep 10s
+timedatectl set-timezone Asia/Shangha
 echo "### 运行完成 ###"
 #read isreboot
 echo "3秒后自动重启"
